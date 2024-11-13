@@ -33,11 +33,11 @@ const copypaste = useCallback(()=>{
 
 return (
     <>
-      <h1 className="text-4xl text-center text-white">Password Genrator</h1> 
-      <div className='w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-4 my-8 text-orange-500 text-xl bg-gray-600'><div className='flex rounded-lg overflow-hidden mb-4'>
+      <h1 className="text-4xl text-center text-white my-8">Password Genrator</h1> 
+      <div className='w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-4 my-4 text-orange-600 text-xl bg-gray-700'><div className='flex rounded-lg overflow-hidden mb-4'>
         <input type="text" value={password} readOnly className='outline-none w-full py-1 px-3  text-black' placeholder='Password' ref={passwordref} />
-        <button className='outline-none bg-blue-300 text-white px-3 py-0.5 shrink-0' onClick={copypaste}>Copy</button></div>
-      <div className='flex text-sm gap-x-2'>
+        <button className='outline-none bg-blue-600 text-white px-3 py-0.5 shrink-0' onClick={copypaste}>Copy</button></div>
+      <div className='flex text-xl gap-x-2'>
         <div className='flex items-center gap-x-1'>
           <input type="range" min={6} max={40} value={length} className='cursor-pointer' onChange={(e) => {
             setlength(e.target.value)
